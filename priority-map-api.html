@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>probabilities.finite-distributions API reference (clojure-contrib)</title>
+    <title>priority-map API reference (clojure-contrib)</title>
     <link href="static/favicon.png" rel="icon" />
     <link href="static/favicon.png" rel="shortcut icon" />
     <link media="all" type="text/css" href="static/clojure.css" rel="stylesheet" />
@@ -54,44 +54,24 @@ namespace.
   <div style="margin-left: 1em;" class="toc-section">
     <a href="#toc0">Overview</a>
     <div style="margin-left: 1em;" class="toc-entry">
-      <a href="#clojure.contrib.probabilities.finite-distributions/certainly">certainly</a>
+      <a href="#clojure.contrib.priority-map/priority-map">priority-map</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
-      <a href="#clojure.contrib.probabilities.finite-distributions/choose">choose</a>
-    </div><div style="margin-left: 1em;" class="toc-entry">
-      <a href="#clojure.contrib.probabilities.finite-distributions/cond-dist-m">cond-dist-m</a>
-    </div><div style="margin-left: 1em;" class="toc-entry">
-      <a href="#clojure.contrib.probabilities.finite-distributions/cond-prob">cond-prob</a>
-    </div><div style="margin-left: 1em;" class="toc-entry">
-      <a href="#clojure.contrib.probabilities.finite-distributions/dist-m">dist-m</a>
-    </div><div style="margin-left: 1em;" class="toc-entry">
-      <a href="#clojure.contrib.probabilities.finite-distributions/join-with">join-with</a>
-    </div><div style="margin-left: 1em;" class="toc-entry">
-      <a href="#clojure.contrib.probabilities.finite-distributions/make-distribution">make-distribution</a>
-    </div><div style="margin-left: 1em;" class="toc-entry">
-      <a href="#clojure.contrib.probabilities.finite-distributions/normalize">normalize</a>
-    </div><div style="margin-left: 1em;" class="toc-entry">
-      <a href="#clojure.contrib.probabilities.finite-distributions/prob">prob</a>
-    </div><div style="margin-left: 1em;" class="toc-entry">
-      <a href="#clojure.contrib.probabilities.finite-distributions/uniform">uniform</a>
-    </div><div style="margin-left: 1em;" class="toc-entry">
-      <a href="#clojure.contrib.probabilities.finite-distributions/zipf">zipf</a>
+      <a href="#clojure.contrib.priority-map/priority-map-by">priority-map-by</a>
     </div>
     <br />
   </div>
 </div>
 </div>
-                <div id="content-tag"><h1 id="overview">API for <span id="namespace-name">probabilities.finite-distributions</span>
+                <div id="content-tag"><h1 id="overview">API for <span id="namespace-name">priority-map</span>
   <span id="branch-name">(master branch)</span></h1>
-<span id="author-line">by <span id="author-name">Konrad Hinsen</span><br /></span>
+
 <br />Usage:
 <pre>
 (ns your-namespace
-  (:require <span id="long-name">clojure.contrib.probabilities.finite-distributions</span>))
+  (:require <span id="long-name">clojure.contrib.priority-map</span>))
 </pre><pre>
 </pre><h2>Overview</h2>
-<pre id="namespace-docstr">Finite probability distributions
-This library defines a monad for combining finite probability
-distributions.</pre>
+<pre id="namespace-docstr"></pre>
 
 
 <br />
@@ -99,137 +79,27 @@ distributions.</pre>
 <div id="var-entry">
   <br />
   <hr />
-  <h2 id="clojure.contrib.probabilities.finite-distributions/certainly">certainly</h2>
+  <h2 id="clojure.contrib.priority-map/priority-map">priority-map</h2>
   <span id="var-type">function</span><br />
-  <pre id="var-usage">Usage: (certainly v)
+  <pre id="var-usage">Usage: (priority-map &amp; keyvals)
 </pre>
-  <pre id="var-docstr">Returns a distribution in which the single value v has probability 1.</pre>
+  <pre id="var-docstr">keyval =&gt; key val
+Returns a new priority map with supplied mappings</pre>
   
   
-  <a href="http://github.com/richhickey/clojure-contrib/blob/2ede388a9267d175bfaa7781ee9d57532eb4f20f/src/main/clojure/clojure/contrib/probabilities/finite_distributions.clj#L146" id="var-source">Source</a>
+  <a href="http://github.com/richhickey/clojure-contrib/blob/18c8713709e4cb095d10b154854f8d0b8fb50ad8/src/main/clojure/clojure/contrib/priority_map.clj#L314" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
-  <h2 id="clojure.contrib.probabilities.finite-distributions/choose">choose</h2>
+  <h2 id="clojure.contrib.priority-map/priority-map-by">priority-map-by</h2>
   <span id="var-type">function</span><br />
-  <pre id="var-usage">Usage: (choose &amp; choices)
+  <pre id="var-usage">Usage: (priority-map-by comparator &amp; keyvals)
 </pre>
-  <pre id="var-docstr">Construct a distribution from an explicit list of probabilities
-and values. They are given in the form of a vector of probability-value
-pairs. In the last pair, the probability can be given by the keyword
-:else, which stands for 1 minus the total of the other probabilities.</pre>
+  <pre id="var-docstr">keyval =&gt; key val
+Returns a new priority map with supplied mappings</pre>
   
   
-  <a href="http://github.com/richhickey/clojure-contrib/blob/2ede388a9267d175bfaa7781ee9d57532eb4f20f/src/main/clojure/clojure/contrib/probabilities/finite_distributions.clj#L92" id="var-source">Source</a>
-</div><div id="var-entry">
-  <br />
-  <hr />
-  <h2 id="clojure.contrib.probabilities.finite-distributions/cond-dist-m">cond-dist-m</h2>
-  <span id="var-type">var</span><br />
-  <pre id="var-usage"></pre>
-  <pre id="var-docstr">Variant of the dist monad that can handle undefined values.</pre>
-  
-  
-  <a href="http://github.com/richhickey/clojure-contrib/blob/2ede388a9267d175bfaa7781ee9d57532eb4f20f/src/main/clojure/clojure/contrib/probabilities/finite_distributions.clj#L46" id="var-source">Source</a>
-</div><div id="var-entry">
-  <br />
-  <hr />
-  <h2 id="clojure.contrib.probabilities.finite-distributions/cond-prob">cond-prob</h2>
-  <span id="var-type">function</span><br />
-  <pre id="var-usage">Usage: (cond-prob pred dist)
-</pre>
-  <pre id="var-docstr">Returns the conditional probability for the values in dist that satisfy
-the predicate pred.</pre>
-  
-  
-  <a href="http://github.com/richhickey/clojure-contrib/blob/2ede388a9267d175bfaa7781ee9d57532eb4f20f/src/main/clojure/clojure/contrib/probabilities/finite_distributions.clj#L160" id="var-source">Source</a>
-</div><div id="var-entry">
-  <br />
-  <hr />
-  <h2 id="clojure.contrib.probabilities.finite-distributions/dist-m">dist-m</h2>
-  <span id="var-type">var</span><br />
-  <pre id="var-usage"></pre>
-  <pre id="var-docstr">Monad describing computations on fuzzy quantities, represented by a finite
-probability distribution for the possible values. A distribution is
-represented by a map from values to probabilities.</pre>
-  
-  
-  <a href="http://github.com/richhickey/clojure-contrib/blob/2ede388a9267d175bfaa7781ee9d57532eb4f20f/src/main/clojure/clojure/contrib/probabilities/finite_distributions.clj#L28" id="var-source">Source</a>
-</div><div id="var-entry">
-  <br />
-  <hr />
-  <h2 id="clojure.contrib.probabilities.finite-distributions/join-with">join-with</h2>
-  <span id="var-type">function</span><br />
-  <pre id="var-usage">Usage: (join-with f dist1 dist2)
-</pre>
-  <pre id="var-docstr">Returns the distribution of (f x y) with x from dist1 and y from dist2.</pre>
-  
-  
-  <a href="http://github.com/richhickey/clojure-contrib/blob/2ede388a9267d175bfaa7781ee9d57532eb4f20f/src/main/clojure/clojure/contrib/probabilities/finite_distributions.clj#L151" id="var-source">Source</a>
-</div><div id="var-entry">
-  <br />
-  <hr />
-  <h2 id="clojure.contrib.probabilities.finite-distributions/make-distribution">make-distribution</h2>
-  <span id="var-type">function</span><br />
-  <pre id="var-usage">Usage: (make-distribution coll f)
-</pre>
-  <pre id="var-docstr">Returns the distribution in which each element x of the collection
-has a probability proportional to (f x)</pre>
-  
-  
-  <a href="http://github.com/richhickey/clojure-contrib/blob/2ede388a9267d175bfaa7781ee9d57532eb4f20f/src/main/clojure/clojure/contrib/probabilities/finite_distributions.clj#L134" id="var-source">Source</a>
-</div><div id="var-entry">
-  <br />
-  <hr />
-  <h2 id="clojure.contrib.probabilities.finite-distributions/normalize">normalize</h2>
-  <span id="var-type">function</span><br />
-  <pre id="var-usage">Usage: (normalize weights)
-</pre>
-  <pre id="var-docstr">Convert a weight map (e.g. a map of counter values) to a distribution
-by multiplying with a normalization factor. If the map has a key
-:total, its value is assumed to be the sum over all the other values and
-it is used for normalization. Otherwise, the sum is calculated
-explicitly. The :total key is removed from the resulting distribution.</pre>
-  
-  
-  <a href="http://github.com/richhickey/clojure-contrib/blob/2ede388a9267d175bfaa7781ee9d57532eb4f20f/src/main/clojure/clojure/contrib/probabilities/finite_distributions.clj#L70" id="var-source">Source</a>
-</div><div id="var-entry">
-  <br />
-  <hr />
-  <h2 id="clojure.contrib.probabilities.finite-distributions/prob">prob</h2>
-  <span id="var-type">function</span><br />
-  <pre id="var-usage">Usage: (prob pred dist)
-</pre>
-  <pre id="var-docstr">Return the probability that the predicate pred is satisfied in the
-distribution dist, i.e. the sum of the probabilities of the values
-that satisfy pred.</pre>
-  
-  
-  <a href="http://github.com/richhickey/clojure-contrib/blob/2ede388a9267d175bfaa7781ee9d57532eb4f20f/src/main/clojure/clojure/contrib/probabilities/finite_distributions.clj#L197" id="var-source">Source</a>
-</div><div id="var-entry">
-  <br />
-  <hr />
-  <h2 id="clojure.contrib.probabilities.finite-distributions/uniform">uniform</h2>
-  <span id="var-type">function</span><br />
-  <pre id="var-usage">Usage: (uniform coll)
-</pre>
-  <pre id="var-docstr">Return a distribution in which each of the elements of coll
-has the same probability.</pre>
-  
-  
-  <a href="http://github.com/richhickey/clojure-contrib/blob/2ede388a9267d175bfaa7781ee9d57532eb4f20f/src/main/clojure/clojure/contrib/probabilities/finite_distributions.clj#L84" id="var-source">Source</a>
-</div><div id="var-entry">
-  <br />
-  <hr />
-  <h2 id="clojure.contrib.probabilities.finite-distributions/zipf">zipf</h2>
-  <span id="var-type">function</span><br />
-  <pre id="var-usage">Usage: (zipf s n)
-</pre>
-  <pre id="var-docstr">Returns the Zipf distribution in which the numbers k=1..n have
-probabilities proportional to 1/k^s.</pre>
-  
-  
-  <a href="http://github.com/richhickey/clojure-contrib/blob/2ede388a9267d175bfaa7781ee9d57532eb4f20f/src/main/clojure/clojure/contrib/probabilities/finite_distributions.clj#L140" id="var-source">Source</a>
+  <a href="http://github.com/richhickey/clojure-contrib/blob/18c8713709e4cb095d10b154854f8d0b8fb50ad8/src/main/clojure/clojure/contrib/priority_map.clj#L320" id="var-source">Source</a>
 </div>
 
 
