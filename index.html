@@ -1216,7 +1216,7 @@ Stuart Sierra</pre>
   <a href="javadoc.browse-api.html" id="api-link">Detailed API documentation</a><br />
   <pre id="namespace-docstr">Start a web browser from Clojure</pre>
   
-  
+  <span class="ns-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   
   Public variables and functions:
   <span id="var-link"><a href="javadoc.browse-api.html#clojure.contrib.javadoc.browse/open-url-in-browser" id="var-tag">open-url-in-browser</a> </span><span id="var-link"><a href="javadoc.browse-api.html#clojure.contrib.javadoc.browse/open-url-in-swing" id="var-tag">open-url-in-swing</a> </span><br />
@@ -1308,7 +1308,7 @@ To read JSON, use read-json.</pre>
   
   
   Public variables and functions:
-  <span id="var-link"><a href="json-api.html#clojure.contrib.json/json-str" id="var-tag">json-str</a> </span><span id="var-link"><a href="json-api.html#clojure.contrib.json/pprint-json" id="var-tag">pprint-json</a> </span><span id="var-link"><a href="json-api.html#clojure.contrib.json/print-json" id="var-tag">print-json</a> </span><span id="var-link"><a href="json-api.html#clojure.contrib.json/read-json" id="var-tag">read-json</a> </span><span id="var-link"><a href="json-api.html#clojure.contrib.json/read-json-from" id="var-tag">read-json-from</a> </span><span id="var-link"><a href="json-api.html#clojure.contrib.json/write-json" id="var-tag">write-json</a> </span><br />
+  <br />
   
 </div><div id="namespace-entry">
   <br />
@@ -1671,44 +1671,21 @@ functions.</pre>
   <br />
   <hr />
   <h2 id="pprint">pprint</h2>
-  <span id="author-line">by <span id="author-name">Tom Faulhaber</span><br /></span>
-  <a href="pprint-api.html" id="api-link">Detailed API documentation</a><br />
-  <pre id="namespace-docstr">This module comprises two elements:
-1) A pretty printer for Clojure data structures, implemented in the 
-   function "pprint"
-2) A Common Lisp compatible format function, implemented as 
-   "cl-format" because Clojure is using the name "format" 
-   for its Java-based format function.
-
-See documentation for those functions for more information or complete 
-documentation on the the clojure-contrib web site on github.
-
-As of the 1.2 release, pprint has been moved to clojure.pprint. Please prefer
-the clojure.pprint version for new code.</pre>
   
-  <span class="ns-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
+  <a href="pprint-api.html" id="api-link">Detailed API documentation</a><br />
+  <pre id="namespace-docstr"></pre>
+  
+  
   
   Public variables and functions:
-  <span id="var-link"><a href="pprint-api.html#clojure.contrib.pprint/*code-dispatch*" id="var-tag">*code-dispatch*</a> </span><span id="var-link"><a href="pprint-api.html#clojure.contrib.pprint/*print-base*" id="var-tag">*print-base*</a> </span><span id="var-link"><a href="pprint-api.html#clojure.contrib.pprint/*print-circle*" id="var-tag">*print-circle*</a> </span><span id="var-link"><a href="pprint-api.html#clojure.contrib.pprint/*print-lines*" id="var-tag">*print-lines*</a> </span><span id="var-link"><a href="pprint-api.html#clojure.contrib.pprint/*print-miser-width*" id="var-tag">*print-miser-width*</a> </span><span id="var-link"><a href="pprint-api.html#clojure.contrib.pprint/*print-pprint-dispatch*" id="var-tag">*print-pprint-dispatch*</a> </span><span id="var-link"><a href="pprint-api.html#clojure.contrib.pprint/*print-pretty*" id="var-tag">*print-pretty*</a> </span><span id="var-link"><a href="pprint-api.html#clojure.contrib.pprint/*print-radix*" id="var-tag">*print-radix*</a> </span><span id="var-link"><a href="pprint-api.html#clojure.contrib.pprint/*print-right-margin*" id="var-tag">*print-right-margin*</a> </span><span id="var-link"><a href="pprint-api.html#clojure.contrib.pprint/*print-shared*" id="var-tag">*print-shared*</a> </span><span id="var-link"><a href="pprint-api.html#clojure.contrib.pprint/*print-suppress-namespaces*" id="var-tag">*print-suppress-namespaces*</a> </span><span id="var-link"><a href="pprint-api.html#clojure.contrib.pprint/*simple-dispatch*" id="var-tag">*simple-dispatch*</a> </span><span id="var-link"><a href="pprint-api.html#clojure.contrib.pprint/cl-format" id="var-tag">cl-format</a> </span><span id="var-link"><a href="pprint-api.html#clojure.contrib.pprint/compile-format" id="var-tag">compile-format</a> </span><span id="var-link"><a href="pprint-api.html#clojure.contrib.pprint/formatter" id="var-tag">formatter</a> </span><span id="var-link"><a href="pprint-api.html#clojure.contrib.pprint/formatter-out" id="var-tag">formatter-out</a> </span><span id="var-link"><a href="pprint-api.html#clojure.contrib.pprint/fresh-line" id="var-tag">fresh-line</a> </span><span id="var-link"><a href="pprint-api.html#clojure.contrib.pprint/pp" id="var-tag">pp</a> </span><span id="var-link"><a href="pprint-api.html#clojure.contrib.pprint/pprint" id="var-tag">pprint</a> </span><span id="var-link"><a href="pprint-api.html#clojure.contrib.pprint/pprint-indent" id="var-tag">pprint-indent</a> </span><span id="var-link"><a href="pprint-api.html#clojure.contrib.pprint/pprint-logical-block" id="var-tag">pprint-logical-block</a> </span><span id="var-link"><a href="pprint-api.html#clojure.contrib.pprint/pprint-newline" id="var-tag">pprint-newline</a> </span><span id="var-link"><a href="pprint-api.html#clojure.contrib.pprint/pprint-tab" id="var-tag">pprint-tab</a> </span><span id="var-link"><a href="pprint-api.html#clojure.contrib.pprint/set-pprint-dispatch" id="var-tag">set-pprint-dispatch</a> </span><span id="var-link"><a href="pprint-api.html#clojure.contrib.pprint/use-method" id="var-tag">use-method</a> </span><span id="var-link"><a href="pprint-api.html#clojure.contrib.pprint/with-pprint-dispatch" id="var-tag">with-pprint-dispatch</a> </span><span id="var-link"><a href="pprint-api.html#clojure.contrib.pprint/write" id="var-tag">write</a> </span><span id="var-link"><a href="pprint-api.html#clojure.contrib.pprint/write-out" id="var-tag">write-out</a> </span><br />
+  <span id="var-link"><a href="pprint-api.html#clojure.contrib.pprint/*print-pretty*" id="var-tag">*print-pretty*</a> </span><br />
   <span id="subspace"><br />Variables and functions in
     <span id="name">pprint.examples.json</span>:
-    <span id="sub-var-link">
-      <a href="pprint-api.html#clojure.contrib.pprint.examples.json/dispatch-json">dispatch-json</a>
-    </span><span id="sub-var-link">
-      <a href="pprint-api.html#clojure.contrib.pprint.examples.json/json-str">json-str</a>
-    </span><span id="sub-var-link">
-      <a href="pprint-api.html#clojure.contrib.pprint.examples.json/print-json">print-json</a>
-    </span>
+    
     <br />
   </span><span id="subspace"><br />Variables and functions in
     <span id="name">pprint.examples.xml</span>:
-    <span id="sub-var-link">
-      <a href="pprint-api.html#clojure.contrib.pprint.examples.xml/*html-compatible*">*html-compatible*</a>
-    </span><span id="sub-var-link">
-      <a href="pprint-api.html#clojure.contrib.pprint.examples.xml/*prxml-indent*">*prxml-indent*</a>
-    </span><span id="sub-var-link">
-      <a href="pprint-api.html#clojure.contrib.pprint.examples.xml/prxml">prxml</a>
-    </span>
+    
     <br />
   </span>
 </div><div id="namespace-entry">
@@ -1831,7 +1808,7 @@ under the JVM.  See the function documentation for more details.</pre>
   <a href="properties-api.html" id="api-link">Detailed API documentation</a><br />
   <pre id="namespace-docstr"></pre>
   
-  
+  <span class="ns-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   
   Public variables and functions:
   <span id="var-link"><a href="properties-api.html#clojure.contrib.properties/as-properties" id="var-tag">as-properties</a> </span><span id="var-link"><a href="properties-api.html#clojure.contrib.properties/get-system-property" id="var-tag">get-system-property</a> </span><span id="var-link"><a href="properties-api.html#clojure.contrib.properties/read-properties" id="var-tag">read-properties</a> </span><span id="var-link"><a href="properties-api.html#clojure.contrib.properties/set-system-properties" id="var-tag">set-system-properties</a> </span><span id="var-link"><a href="properties-api.html#clojure.contrib.properties/with-system-properties" id="var-tag">with-system-properties</a> </span><span id="var-link"><a href="properties-api.html#clojure.contrib.properties/write-properties" id="var-tag">write-properties</a> </span><br />
@@ -1911,7 +1888,7 @@ input stream.</pre>
   <a href="seq-utils-api.html" id="api-link">Detailed API documentation</a><br />
   <pre id="namespace-docstr">Sequence utilities for Clojure</pre>
   
-  
+  <span class="ns-deprecated"><span id="content">Deprecated since clojure-contrib version 1.2</span><br /></span>
   
   Public variables and functions:
   <span id="var-link"><a href="seq-utils-api.html#clojure.contrib.seq-utils/fill-queue" id="var-tag">fill-queue</a> </span><span id="var-link"><a href="seq-utils-api.html#clojure.contrib.seq-utils/find-first" id="var-tag">find-first</a> </span><span id="var-link"><a href="seq-utils-api.html#clojure.contrib.seq-utils/flatten" id="var-tag">flatten</a> </span><span id="var-link"><a href="seq-utils-api.html#clojure.contrib.seq-utils/frequencies" id="var-tag">frequencies</a> </span><span id="var-link"><a href="seq-utils-api.html#clojure.contrib.seq-utils/group-by" id="var-tag">group-by</a> </span><span id="var-link"><a href="seq-utils-api.html#clojure.contrib.seq-utils/includes?" id="var-tag">includes?</a> </span><span id="var-link"><a href="seq-utils-api.html#clojure.contrib.seq-utils/indexed" id="var-tag">indexed</a> </span><span id="var-link"><a href="seq-utils-api.html#clojure.contrib.seq-utils/partition-all" id="var-tag">partition-all</a> </span><span id="var-link"><a href="seq-utils-api.html#clojure.contrib.seq-utils/partition-by" id="var-tag">partition-by</a> </span><span id="var-link"><a href="seq-utils-api.html#clojure.contrib.seq-utils/positions" id="var-tag">positions</a> </span><span id="var-link"><a href="seq-utils-api.html#clojure.contrib.seq-utils/rand-elt" id="var-tag">rand-elt</a> </span><span id="var-link"><a href="seq-utils-api.html#clojure.contrib.seq-utils/rec-cat" id="var-tag">rec-cat</a> </span><span id="var-link"><a href="seq-utils-api.html#clojure.contrib.seq-utils/rec-seq" id="var-tag">rec-seq</a> </span><span id="var-link"><a href="seq-utils-api.html#clojure.contrib.seq-utils/reductions" id="var-tag">reductions</a> </span><span id="var-link"><a href="seq-utils-api.html#clojure.contrib.seq-utils/rotations" id="var-tag">rotations</a> </span><span id="var-link"><a href="seq-utils-api.html#clojure.contrib.seq-utils/separate" id="var-tag">separate</a> </span><span id="var-link"><a href="seq-utils-api.html#clojure.contrib.seq-utils/seq-on" id="var-tag">seq-on</a> </span><span id="var-link"><a href="seq-utils-api.html#clojure.contrib.seq-utils/shuffle" id="var-tag">shuffle</a> </span><br />
