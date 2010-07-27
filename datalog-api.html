@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>datalog API reference (clojure-contrib)</title>
+    <title>datalog - clojure-contrib v1.2 API documentation</title>
     <link href="static/favicon.png" rel="icon" />
     <link href="static/favicon.png" rel="shortcut icon" />
     <link media="all" type="text/css" href="static/clojure.css" rel="stylesheet" />
@@ -30,18 +30,22 @@ namespace.
       <div id="leftcolumn"><div style="text-align: center;"></div>
 <div class="menu">
   <div class="WikiCustomNav WikiElement wiki">
+    <span class="toc-header"><span id="project-name">clojure-contrib</span> <span id="version">v1.2</span> API</span><br />
+    <ul>
+      <li><a class="wiki_link" href="index.html">Overview</a></li>
+      <li><a class="wiki_link" href="api-index.html">API Index</a></li>
+    </ul>
+    <span class="toc-header">Namespaces</span>
+    <ul id="left-sidebar-list">
+      <li><a href="accumulators-api.html" class="wiki_link">accumulators</a></li><li><a href="agent-utils-api.html" class="wiki_link">agent-utils</a></li><li><a href="apply-macro-api.html" class="wiki_link">apply-macro</a></li><li><a href="base64-api.html" class="wiki_link">base64</a></li><li><a href="classpath-api.html" class="wiki_link">classpath</a></li><li><a href="combinatorics-api.html" class="wiki_link">combinatorics</a></li><li><a href="command-line-api.html" class="wiki_link">command-line</a></li><li><a href="complex-numbers-api.html" class="wiki_link">complex-numbers</a></li><li><a href="cond-api.html" class="wiki_link">cond</a></li><li><a href="condition-api.html" class="wiki_link">condition</a></li><li><a href="core-api.html" class="wiki_link">core</a></li><li><a href="dataflow-api.html" class="wiki_link">dataflow</a></li><li><a href="datalog-api.html" class="wiki_link">datalog</a></li><li><a href="def-api.html" class="wiki_link">def</a></li><li><a href="duck-streams-api.html" class="wiki_link">duck-streams</a></li><li><a href="error-kit-api.html" class="wiki_link">error-kit</a></li><li><a href="except-api.html" class="wiki_link">except</a></li><li><a href="fcase-api.html" class="wiki_link">fcase</a></li><li><a href="find-namespaces-api.html" class="wiki_link">find-namespaces</a></li><li><a href="fnmap-api.html" class="wiki_link">fnmap</a></li><li><a href="gen-html-docs-api.html" class="wiki_link">gen-html-docs</a></li><li><a href="generic.arithmetic-api.html" class="wiki_link">generic.arithmetic</a></li><li><a href="generic.collection-api.html" class="wiki_link">generic.collection</a></li><li><a href="generic.comparison-api.html" class="wiki_link">generic.comparison</a></li><li><a href="generic.functor-api.html" class="wiki_link">generic.functor</a></li><li><a href="generic.math-functions-api.html" class="wiki_link">generic.math-functions</a></li><li><a href="graph-api.html" class="wiki_link">graph</a></li><li><a href="greatest-least-api.html" class="wiki_link">greatest-least</a></li><li><a href="http.agent-api.html" class="wiki_link">http.agent</a></li><li><a href="http.connection-api.html" class="wiki_link">http.connection</a></li><li><a href="import-static-api.html" class="wiki_link">import-static</a></li><li><a href="io-api.html" class="wiki_link">io</a></li><li><a href="jar-api.html" class="wiki_link">jar</a></li><li><a href="java-utils-api.html" class="wiki_link">java-utils</a></li><li><a href="javadoc.browse-api.html" class="wiki_link">javadoc.browse</a></li><li><a href="jmx-api.html" class="wiki_link">jmx</a></li><li><a href="json-api.html" class="wiki_link">json</a></li><li><a href="lazy-seqs-api.html" class="wiki_link">lazy-seqs</a></li><li><a href="lazy-xml-api.html" class="wiki_link">lazy-xml</a></li><li><a href="logging-api.html" class="wiki_link">logging</a></li><li><a href="macro-utils-api.html" class="wiki_link">macro-utils</a></li><li><a href="macros-api.html" class="wiki_link">macros</a></li><li><a href="map-utils-api.html" class="wiki_link">map-utils</a></li><li><a href="math-api.html" class="wiki_link">math</a></li><li><a href="miglayout-api.html" class="wiki_link">miglayout</a></li><li><a href="mmap-api.html" class="wiki_link">mmap</a></li><li><a href="mock-api.html" class="wiki_link">mock</a></li><li><a href="monadic-io-streams-api.html" class="wiki_link">monadic-io-streams</a></li><li><a href="monads-api.html" class="wiki_link">monads</a></li><li><a href="ns-utils-api.html" class="wiki_link">ns-utils</a></li><li><a href="pprint-api.html" class="wiki_link">pprint</a></li><li><a href="probabilities.finite-distributions-api.html" class="wiki_link">probabilities.finite-distributions</a></li><li><a href="probabilities.monte-carlo-api.html" class="wiki_link">probabilities.monte-carlo</a></li><li><a href="probabilities.random-numbers-api.html" class="wiki_link">probabilities.random-numbers</a></li><li><a href="profile-api.html" class="wiki_link">profile</a></li><li><a href="properties-api.html" class="wiki_link">properties</a></li><li><a href="prxml-api.html" class="wiki_link">prxml</a></li><li><a href="reflect-api.html" class="wiki_link">reflect</a></li><li><a href="repl-ln-api.html" class="wiki_link">repl-ln</a></li><li><a href="repl-utils-api.html" class="wiki_link">repl-utils</a></li><li><a href="seq-api.html" class="wiki_link">seq</a></li><li><a href="seq-utils-api.html" class="wiki_link">seq-utils</a></li><li><a href="server-socket-api.html" class="wiki_link">server-socket</a></li><li><a href="set-api.html" class="wiki_link">set</a></li><li><a href="shell-api.html" class="wiki_link">shell</a></li><li><a href="shell-out-api.html" class="wiki_link">shell-out</a></li><li><a href="singleton-api.html" class="wiki_link">singleton</a></li><li><a href="sql-api.html" class="wiki_link">sql</a></li><li><a href="str-utils-api.html" class="wiki_link">str-utils</a></li><li><a href="str-utils2-api.html" class="wiki_link">str-utils2</a></li><li><a href="stream-utils-api.html" class="wiki_link">stream-utils</a></li><li><a href="string-api.html" class="wiki_link">string</a></li><li><a href="strint-api.html" class="wiki_link">strint</a></li><li><a href="swing-utils-api.html" class="wiki_link">swing-utils</a></li><li><a href="test-is-api.html" class="wiki_link">test-is</a></li><li><a href="trace-api.html" class="wiki_link">trace</a></li><li><a href="types-api.html" class="wiki_link">types</a></li><li><a href="with-ns-api.html" class="wiki_link">with-ns</a></li><li><a href="zip-filter-api.html" class="wiki_link">zip-filter</a></li>
+    </ul>
     <div class="BranchTOC">
-      <a class="wiki_link" href="#">Branches</a>
+      <span class="toc-header">Other Versions</span>
       <ul id="left-sidebar-branch-list">
-        <li><a href="index.html" class="wiki_link">master</a></li><li><a href="branch-1.1.x/index.html" class="wiki_link">1.1.x</a></li>
+        <li><a href="branch-master/index.html" class="wiki_link">next (in development)</a></li><li><a href="branch-1.1.x/index.html" class="wiki_link">v1.1 (stable)</a></li>
       </ul>
     </div>
-    <a class="wiki_link" href="index.html">Overview</a><br />
-    <a class="wiki_link" href="api-index.html">API Index</a><br />
-    <a class="wiki_link" href="#">Namespaces:</a>
-    <ul id="left-sidebar-list">
-      <li><a href="accumulators-api.html" class="wiki_link">accumulators</a></li><li><a href="agent-utils-api.html" class="wiki_link">agent-utils</a></li><li><a href="apply-macro-api.html" class="wiki_link">apply-macro</a></li><li><a href="base64-api.html" class="wiki_link">base64</a></li><li><a href="classpath-api.html" class="wiki_link">classpath</a></li><li><a href="combinatorics-api.html" class="wiki_link">combinatorics</a></li><li><a href="command-line-api.html" class="wiki_link">command-line</a></li><li><a href="complex-numbers-api.html" class="wiki_link">complex-numbers</a></li><li><a href="cond-api.html" class="wiki_link">cond</a></li><li><a href="condition-api.html" class="wiki_link">condition</a></li><li><a href="core-api.html" class="wiki_link">core</a></li><li><a href="dataflow-api.html" class="wiki_link">dataflow</a></li><li><a href="datalog-api.html" class="wiki_link">datalog</a></li><li><a href="def-api.html" class="wiki_link">def</a></li><li><a href="duck-streams-api.html" class="wiki_link">duck-streams</a></li><li><a href="error-kit-api.html" class="wiki_link">error-kit</a></li><li><a href="except-api.html" class="wiki_link">except</a></li><li><a href="fcase-api.html" class="wiki_link">fcase</a></li><li><a href="find-namespaces-api.html" class="wiki_link">find-namespaces</a></li><li><a href="fnmap-api.html" class="wiki_link">fnmap</a></li><li><a href="gen-html-docs-api.html" class="wiki_link">gen-html-docs</a></li><li><a href="generic.arithmetic-api.html" class="wiki_link">generic.arithmetic</a></li><li><a href="generic.collection-api.html" class="wiki_link">generic.collection</a></li><li><a href="generic.comparison-api.html" class="wiki_link">generic.comparison</a></li><li><a href="generic.functor-api.html" class="wiki_link">generic.functor</a></li><li><a href="generic.math-functions-api.html" class="wiki_link">generic.math-functions</a></li><li><a href="graph-api.html" class="wiki_link">graph</a></li><li><a href="greatest-least-api.html" class="wiki_link">greatest-least</a></li><li><a href="http.agent-api.html" class="wiki_link">http.agent</a></li><li><a href="http.connection-api.html" class="wiki_link">http.connection</a></li><li><a href="import-static-api.html" class="wiki_link">import-static</a></li><li><a href="io-api.html" class="wiki_link">io</a></li><li><a href="jar-api.html" class="wiki_link">jar</a></li><li><a href="java-utils-api.html" class="wiki_link">java-utils</a></li><li><a href="javadoc.browse-api.html" class="wiki_link">javadoc.browse</a></li><li><a href="jmx-api.html" class="wiki_link">jmx</a></li><li><a href="json-api.html" class="wiki_link">json</a></li><li><a href="lazy-seqs-api.html" class="wiki_link">lazy-seqs</a></li><li><a href="lazy-xml-api.html" class="wiki_link">lazy-xml</a></li><li><a href="logging-api.html" class="wiki_link">logging</a></li><li><a href="macro-utils-api.html" class="wiki_link">macro-utils</a></li><li><a href="macros-api.html" class="wiki_link">macros</a></li><li><a href="map-utils-api.html" class="wiki_link">map-utils</a></li><li><a href="math-api.html" class="wiki_link">math</a></li><li><a href="miglayout-api.html" class="wiki_link">miglayout</a></li><li><a href="mmap-api.html" class="wiki_link">mmap</a></li><li><a href="mock-api.html" class="wiki_link">mock</a></li><li><a href="monadic-io-streams-api.html" class="wiki_link">monadic-io-streams</a></li><li><a href="monads-api.html" class="wiki_link">monads</a></li><li><a href="ns-utils-api.html" class="wiki_link">ns-utils</a></li><li><a href="pprint-api.html" class="wiki_link">pprint</a></li><li><a href="priority-map-api.html" class="wiki_link">priority-map</a></li><li><a href="probabilities.finite-distributions-api.html" class="wiki_link">probabilities.finite-distributions</a></li><li><a href="probabilities.monte-carlo-api.html" class="wiki_link">probabilities.monte-carlo</a></li><li><a href="probabilities.random-numbers-api.html" class="wiki_link">probabilities.random-numbers</a></li><li><a href="profile-api.html" class="wiki_link">profile</a></li><li><a href="properties-api.html" class="wiki_link">properties</a></li><li><a href="prxml-api.html" class="wiki_link">prxml</a></li><li><a href="reflect-api.html" class="wiki_link">reflect</a></li><li><a href="repl-ln-api.html" class="wiki_link">repl-ln</a></li><li><a href="repl-utils-api.html" class="wiki_link">repl-utils</a></li><li><a href="seq-api.html" class="wiki_link">seq</a></li><li><a href="seq-utils-api.html" class="wiki_link">seq-utils</a></li><li><a href="server-socket-api.html" class="wiki_link">server-socket</a></li><li><a href="set-api.html" class="wiki_link">set</a></li><li><a href="shell-api.html" class="wiki_link">shell</a></li><li><a href="shell-out-api.html" class="wiki_link">shell-out</a></li><li><a href="singleton-api.html" class="wiki_link">singleton</a></li><li><a href="sql-api.html" class="wiki_link">sql</a></li><li><a href="str-utils-api.html" class="wiki_link">str-utils</a></li><li><a href="str-utils2-api.html" class="wiki_link">str-utils2</a></li><li><a href="stream-utils-api.html" class="wiki_link">stream-utils</a></li><li><a href="string-api.html" class="wiki_link">string</a></li><li><a href="strint-api.html" class="wiki_link">strint</a></li><li><a href="swing-utils-api.html" class="wiki_link">swing-utils</a></li><li><a href="test-is-api.html" class="wiki_link">test-is</a></li><li><a href="trace-api.html" class="wiki_link">trace</a></li><li><a href="types-api.html" class="wiki_link">types</a></li><li><a href="with-ns-api.html" class="wiki_link">with-ns</a></li><li><a href="zip-filter-api.html" class="wiki_link">zip-filter</a></li>
-    </ul>
+    <a href="http://clojure.org" class="wiki_link">Clojure Home</a>
   </div>
 </div>
 </div>
@@ -225,7 +229,8 @@ namespace.
 </div>
 </div>
                 <div id="content-tag"><h1 id="overview">API for <span id="namespace-name">datalog</span>
-  <span id="branch-name">(master branch)</span></h1>
+  - <span id="header-project">clojure-contrib</span> <span id="header-version">v1.2</span> (<span id="header-status">beta 1</span>)
+  </h1>
 <span id="author-line">by <span id="author-name">Jeffrey Straszheim</span><br /></span>
 <br />Usage:
 <pre>
@@ -253,7 +258,7 @@ namespace.
 used to execute the query.</pre>
   
   
-  <a href="http://github.com/richhickey/clojure-contrib/blob/7188a51605136f36524e4091fe806859114d6056/src/main/clojure/clojure/contrib/datalog.clj#L46" id="var-source">Source</a>
+  <a href="http://github.com/richhickey/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/datalog.clj#L46" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -265,7 +270,7 @@ used to execute the query.</pre>
 work plan and return the results.</pre>
   
   
-  <a href="http://github.com/richhickey/clojure-contrib/blob/7188a51605136f36524e4091fe806859114d6056/src/main/clojure/clojure/contrib/datalog.clj#L56" id="var-source">Source</a>
+  <a href="http://github.com/richhickey/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/datalog.clj#L56" id="var-source">Source</a>
 </div>
 <h2 id="namespace-name">datalog.database</h2>
 <pre id="namespace-docstr"></pre>
@@ -281,7 +286,7 @@ work plan and return the results.</pre>
   <pre id="var-docstr">Adds an index to an empty relation named name</pre>
   
   
-  <a href="http://github.com/richhickey/clojure-contrib/blob/7188a51605136f36524e4091fe806859114d6056/src/main/clojure/clojure/contrib/datalog/database.clj#L86" id="var-source">Source</a>
+  <a href="http://github.com/richhickey/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/datalog/database.clj#L86" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.database/add-relation">add-relation</h2>
@@ -291,7 +296,7 @@ work plan and return the results.</pre>
   <pre id="var-docstr">Adds a relation to the database</pre>
   
   
-  <a href="http://github.com/richhickey/clojure-contrib/blob/7188a51605136f36524e4091fe806859114d6056/src/main/clojure/clojure/contrib/datalog/database.clj#L81" id="var-source">Source</a>
+  <a href="http://github.com/richhickey/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/datalog/database.clj#L81" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.database/add-tuple">add-tuple</h2>
@@ -307,7 +312,7 @@ the new database.
 [rel tuple] adds to the relation object.  Returns the new relation.</pre>
   
   
-  <a href="http://github.com/richhickey/clojure-contrib/blob/7188a51605136f36524e4091fe806859114d6056/src/main/clojure/clojure/contrib/datalog/database.clj#L172" id="var-source">Source</a>
+  <a href="http://github.com/richhickey/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/datalog/database.clj#L172" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.database/add-tuples">add-tuples</h2>
@@ -320,7 +325,7 @@ the new database.
    [:rel-name :key-1 2 :key-2 3])</pre>
   
   
-  <a href="http://github.com/richhickey/clojure-contrib/blob/7188a51605136f36524e4091fe806859114d6056/src/main/clojure/clojure/contrib/datalog/database.clj#L207" id="var-source">Source</a>
+  <a href="http://github.com/richhickey/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/datalog/database.clj#L207" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.database/any-match?">any-match?</h2>
@@ -330,7 +335,7 @@ the new database.
   <pre id="var-docstr">Finds if there are any matching records for the partial tuple</pre>
   
   
-  <a href="http://github.com/richhickey/clojure-contrib/blob/7188a51605136f36524e4091fe806859114d6056/src/main/clojure/clojure/contrib/datalog/database.clj#L253" id="var-source">Source</a>
+  <a href="http://github.com/richhickey/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/datalog/database.clj#L253" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.database/database-counts">database-counts</h2>
@@ -340,7 +345,7 @@ the new database.
   <pre id="var-docstr">Returns a map with the count of elements in each relation.</pre>
   
   
-  <a href="http://github.com/richhickey/clojure-contrib/blob/7188a51605136f36524e4091fe806859114d6056/src/main/clojure/clojure/contrib/datalog/database.clj#L144" id="var-source">Source</a>
+  <a href="http://github.com/richhickey/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/datalog/database.clj#L144" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.database/database-merge">database-merge</h2>
@@ -350,7 +355,7 @@ the new database.
   <pre id="var-docstr">Merges databases together</pre>
   
   
-  <a href="http://github.com/richhickey/clojure-contrib/blob/7188a51605136f36524e4091fe806859114d6056/src/main/clojure/clojure/contrib/datalog/database.clj#L277" id="var-source">Source</a>
+  <a href="http://github.com/richhickey/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/datalog/database.clj#L277" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.database/database-merge-parallel">database-merge-parallel</h2>
@@ -360,7 +365,7 @@ the new database.
   <pre id="var-docstr">Merges databases together in parallel</pre>
   
   
-  <a href="http://github.com/richhickey/clojure-contrib/blob/7188a51605136f36524e4091fe806859114d6056/src/main/clojure/clojure/contrib/datalog/database.clj#L282" id="var-source">Source</a>
+  <a href="http://github.com/richhickey/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/datalog/database.clj#L282" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.database/datalog-relation">datalog-relation</h2>
@@ -370,7 +375,7 @@ the new database.
   <pre id="var-docstr">Creates a relation</pre>
   
   
-  <a href="http://github.com/richhickey/clojure-contrib/blob/7188a51605136f36524e4091fe806859114d6056/src/main/clojure/clojure/contrib/datalog/database.clj#L76" id="var-source">Source</a>
+  <a href="http://github.com/richhickey/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/datalog/database.clj#L76" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.database/ensure-relation">ensure-relation</h2>
@@ -380,7 +385,7 @@ the new database.
   <pre id="var-docstr">If the database lacks the named relation, add it</pre>
   
   
-  <a href="http://github.com/richhickey/clojure-contrib/blob/7188a51605136f36524e4091fe806859114d6056/src/main/clojure/clojure/contrib/datalog/database.clj#L96" id="var-source">Source</a>
+  <a href="http://github.com/richhickey/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/datalog/database.clj#L96" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.database/get-relation">get-relation</h2>
@@ -390,7 +395,7 @@ the new database.
   <pre id="var-docstr">Get a relation object by name</pre>
   
   
-  <a href="http://github.com/richhickey/clojure-contrib/blob/7188a51605136f36524e4091fe806859114d6056/src/main/clojure/clojure/contrib/datalog/database.clj#L130" id="var-source">Source</a>
+  <a href="http://github.com/richhickey/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/datalog/database.clj#L130" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.database/make-database">make-database</h2>
@@ -406,7 +411,7 @@ the new database.
   (index :sally :becky))</pre>
   
   
-  <a href="http://github.com/richhickey/clojure-contrib/blob/7188a51605136f36524e4091fe806859114d6056/src/main/clojure/clojure/contrib/datalog/database.clj#L109" id="var-source">Source</a>
+  <a href="http://github.com/richhickey/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/datalog/database.clj#L109" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.database/merge-relations">merge-relations</h2>
@@ -416,7 +421,7 @@ the new database.
   <pre id="var-docstr">Merges two relations</pre>
   
   
-  <a href="http://github.com/richhickey/clojure-contrib/blob/7188a51605136f36524e4091fe806859114d6056/src/main/clojure/clojure/contrib/datalog/database.clj#L267" id="var-source">Source</a>
+  <a href="http://github.com/richhickey/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/datalog/database.clj#L267" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.database/remove-tuple">remove-tuple</h2>
@@ -433,7 +438,7 @@ returns a new database.
 relation.</pre>
   
   
-  <a href="http://github.com/richhickey/clojure-contrib/blob/7188a51605136f36524e4091fe806859114d6056/src/main/clojure/clojure/contrib/datalog/database.clj#L190" id="var-source">Source</a>
+  <a href="http://github.com/richhickey/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/datalog/database.clj#L190" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.database/replace-relation">replace-relation</h2>
@@ -443,7 +448,7 @@ relation.</pre>
   <pre id="var-docstr">Add or replace a fully constructed relation object to the database.</pre>
   
   
-  <a href="http://github.com/richhickey/clojure-contrib/blob/7188a51605136f36524e4091fe806859114d6056/src/main/clojure/clojure/contrib/datalog/database.clj#L135" id="var-source">Source</a>
+  <a href="http://github.com/richhickey/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/datalog/database.clj#L135" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.database/select">select</h2>
@@ -453,7 +458,7 @@ relation.</pre>
   <pre id="var-docstr">finds all matching tuples to the partial tuple (pt) in the relation named (rn)</pre>
   
   
-  <a href="http://github.com/richhickey/clojure-contrib/blob/7188a51605136f36524e4091fe806859114d6056/src/main/clojure/clojure/contrib/datalog/database.clj#L248" id="var-source">Source</a>
+  <a href="http://github.com/richhickey/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/datalog/database.clj#L248" id="var-source">Source</a>
 </div>
 <h2 id="namespace-name">datalog.literals</h2>
 <pre id="namespace-docstr"></pre>
@@ -793,7 +798,7 @@ relation</pre>
 (&lt;- (:head :x ?x :y ?y) (:body-1 :x ?x :y ?y) (:body-2 :z ?z) (not! :body-3 :x ?x) (if &gt; ?y ?z))</pre>
   
   
-  <a href="http://github.com/richhickey/clojure-contrib/blob/7188a51605136f36524e4091fe806859114d6056/src/main/clojure/clojure/contrib/datalog/rules.clj#L67" id="var-source">Source</a>
+  <a href="http://github.com/richhickey/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/datalog/rules.clj#L67" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.rules/?-">?-</h2>
@@ -803,7 +808,7 @@ relation</pre>
   <pre id="var-docstr">Define a datalog query</pre>
   
   
-  <a href="http://github.com/richhickey/clojure-contrib/blob/7188a51605136f36524e4091fe806859114d6056/src/main/clojure/clojure/contrib/datalog/rules.clj#L85" id="var-source">Source</a>
+  <a href="http://github.com/richhickey/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/datalog/rules.clj#L85" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.rules/all-predicates">all-predicates</h2>
@@ -813,7 +818,7 @@ relation</pre>
   <pre id="var-docstr">Given a rules-set, return all defined predicates</pre>
   
   
-  <a href="http://github.com/richhickey/clojure-contrib/blob/7188a51605136f36524e4091fe806859114d6056/src/main/clojure/clojure/contrib/datalog/rules.clj#L162" id="var-source">Source</a>
+  <a href="http://github.com/richhickey/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/datalog/rules.clj#L162" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.rules/apply-rule">apply-rule</h2>
@@ -825,7 +830,7 @@ relation</pre>
 relation in db-2.  The relation will be created if needed.</pre>
   
   
-  <a href="http://github.com/richhickey/clojure-contrib/blob/7188a51605136f36524e4091fe806859114d6056/src/main/clojure/clojure/contrib/datalog/rules.clj#L183" id="var-source">Source</a>
+  <a href="http://github.com/richhickey/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/datalog/rules.clj#L183" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.rules/compute-sip">compute-sip</h2>
@@ -837,7 +842,7 @@ rule.  A set of intensional predicates should be provided to
 determine what should be adorned.</pre>
   
   
-  <a href="http://github.com/richhickey/clojure-contrib/blob/7188a51605136f36524e4091fe806859114d6056/src/main/clojure/clojure/contrib/datalog/rules.clj#L99" id="var-source">Source</a>
+  <a href="http://github.com/richhickey/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/datalog/rules.clj#L99" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.rules/display-query">display-query</h2>
@@ -847,7 +852,7 @@ determine what should be adorned.</pre>
   <pre id="var-docstr">Return a query in a readable format.</pre>
   
   
-  <a href="http://github.com/richhickey/clojure-contrib/blob/7188a51605136f36524e4091fe806859114d6056/src/main/clojure/clojure/contrib/datalog/rules.clj#L38" id="var-source">Source</a>
+  <a href="http://github.com/richhickey/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/datalog/rules.clj#L38" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.rules/display-rule">display-rule</h2>
@@ -857,7 +862,7 @@ determine what should be adorned.</pre>
   <pre id="var-docstr">Return the rule in a readable format.</pre>
   
   
-  <a href="http://github.com/richhickey/clojure-contrib/blob/7188a51605136f36524e4091fe806859114d6056/src/main/clojure/clojure/contrib/datalog/rules.clj#L31" id="var-source">Source</a>
+  <a href="http://github.com/richhickey/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/datalog/rules.clj#L31" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.rules/is-safe?">is-safe?</h2>
@@ -867,7 +872,7 @@ determine what should be adorned.</pre>
   <pre id="var-docstr">Is the rule safe according to the datalog protocol?</pre>
   
   
-  <a href="http://github.com/richhickey/clojure-contrib/blob/7188a51605136f36524e4091fe806859114d6056/src/main/clojure/clojure/contrib/datalog/rules.clj#L46" id="var-source">Source</a>
+  <a href="http://github.com/richhickey/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/datalog/rules.clj#L46" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.rules/make-rules-set">make-rules-set</h2>
@@ -878,7 +883,7 @@ determine what should be adorned.</pre>
 printing.</pre>
   
   
-  <a href="http://github.com/richhickey/clojure-contrib/blob/7188a51605136f36524e4091fe806859114d6056/src/main/clojure/clojure/contrib/datalog/rules.clj#L128" id="var-source">Source</a>
+  <a href="http://github.com/richhickey/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/datalog/rules.clj#L128" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.rules/non-base-rules">non-base-rules</h2>
@@ -888,7 +893,7 @@ printing.</pre>
   <pre id="var-docstr">Return a collection of rules that depend, somehow, on other rules</pre>
   
   
-  <a href="http://github.com/richhickey/clojure-contrib/blob/7188a51605136f36524e4091fe806859114d6056/src/main/clojure/clojure/contrib/datalog/rules.clj#L167" id="var-source">Source</a>
+  <a href="http://github.com/richhickey/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/datalog/rules.clj#L167" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.rules/predicate-map">predicate-map</h2>
@@ -899,7 +904,7 @@ printing.</pre>
 Each value will be a set of rules.</pre>
   
   
-  <a href="http://github.com/richhickey/clojure-contrib/blob/7188a51605136f36524e4091fe806859114d6056/src/main/clojure/clojure/contrib/datalog/rules.clj#L152" id="var-source">Source</a>
+  <a href="http://github.com/richhickey/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/datalog/rules.clj#L152" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.rules/return-rule-data">return-rule-data</h2>
@@ -909,7 +914,7 @@ Each value will be a set of rules.</pre>
   <pre id="var-docstr">Returns an untypted rule that will be fully printed</pre>
   
   
-  <a href="http://github.com/richhickey/clojure-contrib/blob/7188a51605136f36524e4091fe806859114d6056/src/main/clojure/clojure/contrib/datalog/rules.clj#L80" id="var-source">Source</a>
+  <a href="http://github.com/richhickey/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/datalog/rules.clj#L80" id="var-source">Source</a>
 </div><div id="var-entry">
   <hr />
   <h2 id="clojure.contrib.datalog.rules/rules-set">rules-set</h2>
@@ -919,7 +924,7 @@ Each value will be a set of rules.</pre>
   <pre id="var-docstr">Given a collection of rules return a rules set</pre>
   
   
-  <a href="http://github.com/richhickey/clojure-contrib/blob/7188a51605136f36524e4091fe806859114d6056/src/main/clojure/clojure/contrib/datalog/rules.clj#L136" id="var-source">Source</a>
+  <a href="http://github.com/richhickey/clojure-contrib/blob/b8d2743d3a89e13fc9deb2844ca2167b34aaa9b6/src/main/clojure/clojure/contrib/datalog/rules.clj#L136" id="var-source">Source</a>
 </div>
 <h2 id="namespace-name">datalog.softstrat</h2>
 <pre id="namespace-docstr"></pre>
