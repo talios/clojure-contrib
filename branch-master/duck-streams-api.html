@@ -196,7 +196,7 @@ that are already open.</pre>
   <br />
   <hr />
   <h2 id="clojure.contrib.duck-streams/copy">copy</h2>
-  <span id="var-type">function</span><br />
+  <span id="var-type">multimethod</span><br />
   <pre id="var-usage">Usage: (copy input output)
 </pre>
   <pre id="var-docstr">Copies input to output.  Returns nil.
@@ -262,7 +262,7 @@ closes the reader AFTER YOU CONSUME THE ENTIRE SEQUENCE.</pre>
   <br />
   <hr />
   <h2 id="clojure.contrib.duck-streams/reader">reader</h2>
-  <span id="var-type">function</span><br />
+  <span id="var-type">multimethod</span><br />
   <pre id="var-usage">Usage: (reader x)
 </pre>
   <pre id="var-docstr">Attempts to coerce its argument into an open
@@ -305,7 +305,7 @@ closes f.</pre>
   <br />
   <hr />
   <h2 id="clojure.contrib.duck-streams/to-byte-array">to-byte-array</h2>
-  <span id="var-type">function</span><br />
+  <span id="var-type">multimethod</span><br />
   <pre id="var-usage">Usage: (to-byte-array arg)
 </pre>
   <pre id="var-docstr">Converts argument into a Java byte array.  Argument may be
@@ -364,7 +364,7 @@ writer, and automatically closed at the end of the sequence.</pre>
   <br />
   <hr />
   <h2 id="clojure.contrib.duck-streams/writer">writer</h2>
-  <span id="var-type">function</span><br />
+  <span id="var-type">multimethod</span><br />
   <pre id="var-usage">Usage: (writer x)
 </pre>
   <pre id="var-docstr">Attempts to coerce its argument into an open java.io.PrintWriter

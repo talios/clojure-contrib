@@ -196,8 +196,8 @@ I/O statement on them, and close the streams. io-spec is
 a binding-like vector in which each stream is specified by
 three element: a keyword by which the stream can be referred to,
 the stream mode (:read or :write), and a stream specification as
-accepted by clojure.contrib.io/reader (mode :read) or
-clojure.contrib.io/writer (mode :write). The statement
+accepted by clojure.java.io/reader (mode :read) or
+clojure.java.io/writer (mode :write). The statement
 is run on a state which is a map from keywords to corresponding
 streams. Single-stream monadic I/O statements must be wrapped
 with clojure.contrib.monads/with-state-field.</pre>
@@ -213,7 +213,7 @@ with clojure.contrib.monads/with-state-field.</pre>
 </pre>
   <pre id="var-docstr">Create a reader from reader-spec, run the monadic I/O statement
 on it, and close the reader. reader-spec can be any object accepted
-by clojure.contrib.io/reader.</pre>
+by clojure.java.io/reader.</pre>
   
   
   <a href="http://github.com/clojure/clojure-contrib/blob//modules/monadic-io-streams/target/classes/clojure/contrib/monadic_io_streams.clj#L82" id="var-source">Source</a>
@@ -226,7 +226,7 @@ by clojure.contrib.io/reader.</pre>
 </pre>
   <pre id="var-docstr">Create a writer from writer-spec, run the monadic I/O statement
 on it, and close the writer. writer-spec can be any object accepted
-by clojure.contrib.io/writer.</pre>
+by clojure.java.io/writer.</pre>
   
   
   <a href="http://github.com/clojure/clojure-contrib/blob//modules/monadic-io-streams/target/classes/clojure/contrib/monadic_io_streams.clj#L90" id="var-source">Source</a>
