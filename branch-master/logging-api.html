@@ -168,7 +168,7 @@ Unless otherwise specified, the current namespace (as identified by *ns*) will
 be used as the log-ns (similar to how the java class name is usually used).
 Note: your log configuration should display the name that was passed to the
 logging implementation, and not perform stack-inspection, otherwise you'll see
-something like "fn__72$impl_write_BANG__39__auto____81" in your logs.
+some ugly and unhelpful text in your logs.
 
 Use the enabled? macro to write conditional code against the logging level
 (beyond simply whether or not to call log, which is handled automatically).
@@ -202,7 +202,7 @@ in the user namespace, and :warn or higher in all other namespaces.</pre>
 agent. Defaults to nil. See log* for details.</pre>
   
   
-  <a href="http://github.com/clojure/clojure-contrib/blob/09c3ff39255cde416fe7bab6696b1db4f418c673/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L94" id="var-source">Source</a>
+  <a href="http://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L94" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -215,7 +215,7 @@ returned from find-factory. Can be rebound to provide alternate logging
 implementations</pre>
   
   
-  <a href="http://github.com/clojure/clojure-contrib/blob/09c3ff39255cde416fe7bab6696b1db4f418c673/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L488" id="var-source">Source</a>
+  <a href="http://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L488" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -226,7 +226,7 @@ implementations</pre>
 disabled. See log* for details.</pre>
   
   
-  <a href="http://github.com/clojure/clojure-contrib/blob/09c3ff39255cde416fe7bab6696b1db4f418c673/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L84" id="var-source">Source</a>
+  <a href="http://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L84" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -237,7 +237,7 @@ disabled. See log* for details.</pre>
 running transaction. Defaults to #{:info :warn}. See log* for details.</pre>
   
   
-  <a href="http://github.com/clojure/clojure-contrib/blob/09c3ff39255cde416fe7bab6696b1db4f418c673/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L89" id="var-source">Source</a>
+  <a href="http://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L89" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -249,7 +249,7 @@ implementation.  Implementations should at least support the six specified
 logging levels if they wish to benefit from the level-specific macros.</pre>
   
   
-  <a href="http://github.com/clojure/clojure-contrib/blob/09c3ff39255cde416fe7bab6696b1db4f418c673/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L62" id="var-source">Source</a>
+  <a href="http://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L62" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -262,7 +262,7 @@ Implementations should be bound to *log-factory* in order to be picked up by
 this library.</pre>
   
   
-  <a href="http://github.com/clojure/clojure-contrib/blob/09c3ff39255cde416fe7bab6696b1db4f418c673/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L73" id="var-source">Source</a>
+  <a href="http://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L73" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -274,19 +274,19 @@ this library.</pre>
 nil if not available. End-users should not need to call this.</pre>
   
   
-  <a href="http://github.com/clojure/clojure-contrib/blob/09c3ff39255cde416fe7bab6696b1db4f418c673/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L334" id="var-source">Source</a>
+  <a href="http://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L334" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/debug">debug</h2>
   <span id="var-type">macro</span><br />
-  <pre id="var-usage">Usage: (debug level message &amp; more)
-       (debug level throwable message &amp; more)
+  <pre id="var-usage">Usage: (debug message &amp; more)
+       (debug throwable message &amp; more)
 </pre>
   <pre id="var-docstr">Debug level logging using print-style args.</pre>
   
   
-  <a href="http://github.com/clojure/clojure-contrib/blob/09c3ff39255cde416fe7bab6696b1db4f418c673/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L265" id="var-source">Source</a>
+  <a href="http://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L265" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -298,7 +298,7 @@ nil if not available. End-users should not need to call this.</pre>
   <pre id="var-docstr">Debug level logging using format.</pre>
   
   
-  <a href="http://github.com/clojure/clojure-contrib/blob/09c3ff39255cde416fe7bab6696b1db4f418c673/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L301" id="var-source">Source</a>
+  <a href="http://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L301" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -312,19 +312,19 @@ should only be necessary if one needs to execute alternate code paths beyond
 whether the log should be written to.</pre>
   
   
-  <a href="http://github.com/clojure/clojure-contrib/blob/09c3ff39255cde416fe7bab6696b1db4f418c673/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L164" id="var-source">Source</a>
+  <a href="http://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L164" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/error">error</h2>
   <span id="var-type">macro</span><br />
-  <pre id="var-usage">Usage: (error level message &amp; more)
-       (error level throwable message &amp; more)
+  <pre id="var-usage">Usage: (error message &amp; more)
+       (error throwable message &amp; more)
 </pre>
   <pre id="var-docstr">Error level logging using print-style args.</pre>
   
   
-  <a href="http://github.com/clojure/clojure-contrib/blob/09c3ff39255cde416fe7bab6696b1db4f418c673/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L283" id="var-source">Source</a>
+  <a href="http://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L283" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -336,19 +336,19 @@ whether the log should be written to.</pre>
   <pre id="var-docstr">Error level logging using format.</pre>
   
   
-  <a href="http://github.com/clojure/clojure-contrib/blob/09c3ff39255cde416fe7bab6696b1db4f418c673/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L319" id="var-source">Source</a>
+  <a href="http://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L319" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/fatal">fatal</h2>
   <span id="var-type">macro</span><br />
-  <pre id="var-usage">Usage: (fatal level message &amp; more)
-       (fatal level throwable message &amp; more)
+  <pre id="var-usage">Usage: (fatal message &amp; more)
+       (fatal throwable message &amp; more)
 </pre>
   <pre id="var-docstr">Fatal level logging using print-style args.</pre>
   
   
-  <a href="http://github.com/clojure/clojure-contrib/blob/09c3ff39255cde416fe7bab6696b1db4f418c673/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L289" id="var-source">Source</a>
+  <a href="http://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L289" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -360,7 +360,7 @@ whether the log should be written to.</pre>
   <pre id="var-docstr">Fatal level logging using format.</pre>
   
   
-  <a href="http://github.com/clojure/clojure-contrib/blob/09c3ff39255cde416fe7bab6696b1db4f418c673/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L325" id="var-source">Source</a>
+  <a href="http://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L325" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -373,7 +373,7 @@ slf4j-logging, log4j-logging, or java-util-logging. End-users should not need
 to call this.</pre>
   
   
-  <a href="http://github.com/clojure/clojure-contrib/blob/09c3ff39255cde416fe7bab6696b1db4f418c673/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L475" id="var-source">Source</a>
+  <a href="http://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L475" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -426,13 +426,13 @@ to call this.</pre>
   <hr />
   <h2 id="clojure.contrib.logging/info">info</h2>
   <span id="var-type">macro</span><br />
-  <pre id="var-usage">Usage: (info level message &amp; more)
-       (info level throwable message &amp; more)
+  <pre id="var-usage">Usage: (info message &amp; more)
+       (info throwable message &amp; more)
 </pre>
   <pre id="var-docstr">Info level logging using print-style args.</pre>
   
   
-  <a href="http://github.com/clojure/clojure-contrib/blob/09c3ff39255cde416fe7bab6696b1db4f418c673/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L271" id="var-source">Source</a>
+  <a href="http://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L271" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -444,7 +444,7 @@ to call this.</pre>
   <pre id="var-docstr">Info level logging using format.</pre>
   
   
-  <a href="http://github.com/clojure/clojure-contrib/blob/09c3ff39255cde416fe7bab6696b1db4f418c673/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L307" id="var-source">Source</a>
+  <a href="http://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L307" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -456,7 +456,7 @@ to call this.</pre>
 or nil if not available. End-users should not need to call this.</pre>
   
   
-  <a href="http://github.com/clojure/clojure-contrib/blob/09c3ff39255cde416fe7bab6696b1db4f418c673/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L439" id="var-source">Source</a>
+  <a href="http://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L439" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -471,7 +471,7 @@ or nil if not available. End-users should not need to call this.</pre>
 for more details.</pre>
   
   
-  <a href="http://github.com/clojure/clojure-contrib/blob/09c3ff39255cde416fe7bab6696b1db4f418c673/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L124" id="var-source">Source</a>
+  <a href="http://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L124" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -493,7 +493,7 @@ One can override the above by setting *force* to :direct or :agent; all
 subsequent writes will be direct or via an agent, respectively.</pre>
   
   
-  <a href="http://github.com/clojure/clojure-contrib/blob/09c3ff39255cde416fe7bab6696b1db4f418c673/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L99" id="var-source">Source</a>
+  <a href="http://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L99" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -513,7 +513,7 @@ Warning: if the logging implementation is configured to output to System.out
 result in StackOverflowException when writing to the log.</pre>
   
   
-  <a href="http://github.com/clojure/clojure-contrib/blob/09c3ff39255cde416fe7bab6696b1db4f418c673/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L207" id="var-source">Source</a>
+  <a href="http://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L207" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -524,7 +524,7 @@ result in StackOverflowException when writing to the log.</pre>
   <pre id="var-docstr">Creates a PrintStream that will output to the log at the specified level.</pre>
   
   
-  <a href="http://github.com/clojure/clojure-contrib/blob/09c3ff39255cde416fe7bab6696b1db4f418c673/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L189" id="var-source">Source</a>
+  <a href="http://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L189" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -535,7 +535,7 @@ result in StackOverflowException when writing to the log.</pre>
   <pre id="var-docstr">Restores System.out and System.err to their original values.</pre>
   
   
-  <a href="http://github.com/clojure/clojure-contrib/blob/09c3ff39255cde416fe7bab6696b1db4f418c673/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L227" id="var-source">Source</a>
+  <a href="http://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L227" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -547,7 +547,7 @@ result in StackOverflowException when writing to the log.</pre>
 not available. End-users should not need to call this.</pre>
   
   
-  <a href="http://github.com/clojure/clojure-contrib/blob/09c3ff39255cde416fe7bab6696b1db4f418c673/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L405" id="var-source">Source</a>
+  <a href="http://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L405" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -560,7 +560,7 @@ not available. End-users should not need to call this.</pre>
 throwable as its second arg. See level-specific macros, e.g., debugf.</pre>
   
   
-  <a href="http://github.com/clojure/clojure-contrib/blob/09c3ff39255cde416fe7bab6696b1db4f418c673/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L151" id="var-source">Source</a>
+  <a href="http://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L151" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -573,7 +573,7 @@ throwable as its second arg. See level-specific macros, e.g., debugf.</pre>
 second arg. See level-specific macros, e.g., debug.</pre>
   
   
-  <a href="http://github.com/clojure/clojure-contrib/blob/09c3ff39255cde416fe7bab6696b1db4f418c673/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L138" id="var-source">Source</a>
+  <a href="http://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L138" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -585,7 +585,7 @@ second arg. See level-specific macros, e.g., debug.</pre>
 not available. End-users should not need to call this.</pre>
   
   
-  <a href="http://github.com/clojure/clojure-contrib/blob/09c3ff39255cde416fe7bab6696b1db4f418c673/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L369" id="var-source">Source</a>
+  <a href="http://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L369" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -598,19 +598,19 @@ not available. End-users should not need to call this.</pre>
 result of expr. Defaults to debug log level.</pre>
   
   
-  <a href="http://github.com/clojure/clojure-contrib/blob/09c3ff39255cde416fe7bab6696b1db4f418c673/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L173" id="var-source">Source</a>
+  <a href="http://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L173" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/trace">trace</h2>
   <span id="var-type">macro</span><br />
-  <pre id="var-usage">Usage: (trace level message &amp; more)
-       (trace level throwable message &amp; more)
+  <pre id="var-usage">Usage: (trace message &amp; more)
+       (trace throwable message &amp; more)
 </pre>
   <pre id="var-docstr">Trace level logging using print-style args.</pre>
   
   
-  <a href="http://github.com/clojure/clojure-contrib/blob/09c3ff39255cde416fe7bab6696b1db4f418c673/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L259" id="var-source">Source</a>
+  <a href="http://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L259" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -622,19 +622,19 @@ result of expr. Defaults to debug log level.</pre>
   <pre id="var-docstr">Trace level logging using format.</pre>
   
   
-  <a href="http://github.com/clojure/clojure-contrib/blob/09c3ff39255cde416fe7bab6696b1db4f418c673/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L295" id="var-source">Source</a>
+  <a href="http://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L295" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clojure.contrib.logging/warn">warn</h2>
   <span id="var-type">macro</span><br />
-  <pre id="var-usage">Usage: (warn level message &amp; more)
-       (warn level throwable message &amp; more)
+  <pre id="var-usage">Usage: (warn message &amp; more)
+       (warn throwable message &amp; more)
 </pre>
   <pre id="var-docstr">Warn level logging using print-style args.</pre>
   
   
-  <a href="http://github.com/clojure/clojure-contrib/blob/09c3ff39255cde416fe7bab6696b1db4f418c673/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L277" id="var-source">Source</a>
+  <a href="http://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L277" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -646,7 +646,7 @@ result of expr. Defaults to debug log level.</pre>
   <pre id="var-docstr">Warn level logging using format.</pre>
   
   
-  <a href="http://github.com/clojure/clojure-contrib/blob/09c3ff39255cde416fe7bab6696b1db4f418c673/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L313" id="var-source">Source</a>
+  <a href="http://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L313" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -661,7 +661,7 @@ specified log-ns value will be used to namespace all log entries.
 By default *out* and *err* write to :info and :error, respectively.</pre>
   
   
-  <a href="http://github.com/clojure/clojure-contrib/blob/09c3ff39255cde416fe7bab6696b1db4f418c673/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L236" id="var-source">Source</a>
+  <a href="http://github.com/clojure/clojure-contrib/blob/9212f644aa7ef1f13271aa9f941d2c6f8574a571/modules/logging/src/main/clojure/clojure/contrib/logging.clj#L236" id="var-source">Source</a>
 </div>
 
 
